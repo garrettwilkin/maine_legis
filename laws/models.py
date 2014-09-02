@@ -19,7 +19,7 @@ class Bill(models.Model):
     type = models.CharField(max_length=SHORT)
 
 
-class Versions(models.Model):
+class Version(models.Model):
     bill = models.ForeignKey(Bill)
     url = models.URLField()
     name = models.CharField(max_length=SHORT)

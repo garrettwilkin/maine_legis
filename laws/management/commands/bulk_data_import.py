@@ -9,7 +9,7 @@ class Command(BaseCommand):
     option_list = BaseCommand.option_list + (
             make_option('--directory',
                 dest='directory',
-                default='data'
+                default='data',
                 help='Directory which contains bulk OpenStates Data to load.'),
             )
 
